@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Programs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        pre {
+            background-color: #e1e1e1;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>C++ Programs</h1>
+    </header>
+    <main>
+        <section class="content">
+            <h2>1. Sum of 3 Numbers in an Array</h2>
+            <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int numbers[3], sum = 0;
+    cout &lt;&lt; "Enter 3 numbers: ";
+    for (int i = 0; i &lt; 3; i++) {
+        cin &gt;&gt; numbers[i];
+    }
+    for (int i = 0; i &lt; 3; i++) {
+        sum &lt;&lt;= numbers[i];
+    }
+    cout &lt;&lt; "The sum of the numbers is: " &lt;&lt; sum &lt;&lt; endl;
+}
+            </pre>
+        </section>
+
+        <section class="content">
+            <h2>2. Multiplication Table</h2>
+            <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int num, i = 1;
+    cout &lt;&lt; "Enter a number: ";
+    cin &gt;&gt; num;
+    cout &lt;&lt; "Multiplication table for " &lt;&lt; num &lt;&lt; " is:\n";
+    while (i &lt;= 10) {
+        cout &lt;&lt; num &lt;&lt; " x " &lt;&lt; i &lt;&lt; " = " &lt;&lt; num * i &lt;&lt; endl;
+        i++;
+    }
+}
+            </pre>
+        </section>
+
+        <section class="content">
+            <h2>3. Convert Lowercase String to Uppercase</h2>
+            <pre>
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+int main() {
+    char str[20];
+    cout &lt;&lt; "Enter a string in lowercase: ";
+    cin &gt;&gt; str;
+    cout &lt;&lt; "Before Conversion: " &lt;&lt; str;
+    strupr(str);
+    cout &lt;&lt; "After Conversion: " &lt;&lt; str;
+}
+            </pre>
+        </section>
+
+        <section class="content">
+            <h2>4. Print a Triangle</h2>
+            <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    for (int i = 1; i &lt;= 5; i++) {
+        for (int j = 1; j &lt;= i; j++) {
+            cout &lt;&lt; j &lt;&lt; " ";
+        }
+        cout &lt;&lt; endl;
+    }
+}
+            </pre>
+        </section>
+
+        <section class="content">
+            <h2>5. Concatenate Two Strings</h2>
+            <pre>
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+int main() {
+    string str1, str2, result;
+    cout &lt;&lt; "Enter the first string: ";
+    cin &gt;&gt; str1;
+    cout &lt;&lt; "Enter the second string: ";
+    cin &gt;&gt; str2;
+    result = str1 + str2;
+    cout &lt;&lt; "Concatenated string: " &lt;&lt; result &lt;&lt; endl;
+}
+            </pre>
+        </section>
+    </main>
+</body>
+</html>
